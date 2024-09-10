@@ -1,0 +1,210 @@
+/* Devon | What a great website for an instructional design portfolio, Divya! You have shown a strong understanding of CSS syntax - there are only a pair of small errors in your code, which I have noted with comments where they appear in the code.
+
+You have also included all of the selectors and CSS properties required for the assignment, and then some! You have used CSS very effectively for learning design, and I am impressed that you have made your website responsive before Stage 3.
+*/
+/* Colour Palette
+#3498db soft blue
+#e74c3c coral
+*/
+
+* {
+    /* Devon | Oops, there is a semi-colon (;) missing at the end of the declaration below */
+    /*Divya: Correction done*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-size: medium; */
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #f5f5f5;
+}
+
+/* Common styles */
+html, body,h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* h1, h2, h3 & h4 font family*/
+h1, h2, h3, h4 {
+    font-family: cursive;
+}
+/* Body content styles */
+h1 {
+    padding: 1.5em;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+img {
+    max-width:500px;
+    padding: 0.5em;
+    width: 100%;
+    height: auto;
+    /*border: 1px solid black; */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+footer{
+    padding:1em;
+    background-color: #3498db;
+    color: white;
+}
+
+/* Navigation menu styles */
+nav {
+    padding: 1em;
+    background-color: black;
+    /* Devon | It is confusing but the correct declaration to use for bold text is font-weight: bold; */
+    /*Divya: Correction done. Instead of font-style it is font-weight now*/
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+nav a {
+    padding: 3em;
+    text-decoration: none;
+}
+nav a:link {
+    color:white;
+    }
+nav a:visited {
+    color: yellow; 
+    }
+
+nav a:hover {
+        color:#e74c3c;
+    }
+
+/*Hyperlinks*/
+a:link{
+    color:purple;
+}
+a:visited{
+    color:navy;
+}
+
+/* Active class for JavaScrpt function() demonstartion */
+.color {
+    color: orangered;
+    
+}
+.color::after{
+    content: "(current)"
+}
+
+/* Class styles */
+.term{
+    font-style:italic;
+    font-weight: bold;
+}
+.instructions{
+    font-weight: bold;
+}
+.image{
+    float:left;
+} 
+
+.clear {
+    clear:both;
+}
+.ol{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper{
+    margin-top:2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-25{
+    padding: 1em;
+    width: 25%;
+    float: left;
+    border: 2px solid #3498db; 
+}
+
+.col-75{
+    padding: 1em;
+    width: 75%;
+    float: left;
+    border: 2px solid #3498db; 
+    
+   
+}
+.img-fluid {
+    padding: 1em;
+    max-width: 100%;
+    width: 65%;
+    height: auto;
+}
+
+
+/* ID styles */
+#contact{
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color:lightyellow;
+    border: 2px solid khaki;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#learner{
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color:lightyellow;
+    border: 2px solid khaki;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fetched{
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color:lightyellow;
+    border: 2px solid khaki;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type="submit"] {
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    h1{
+        border: 5px solid yellow;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav a {
+        padding: 1em;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    iframe{
+        width: 100%;
+    }
+}
